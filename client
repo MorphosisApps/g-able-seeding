@@ -1,0 +1,8 @@
+const { GraphQLClient } = require("graphql-request");
+
+// const graphqlRoute = "http://localhost:1337/graphql";
+const graphqlRoute = "https://g-able-strapi-stg.morphosis.dev/graphql";
+
+const client = new GraphQLClient(graphqlRoute);
+
+module.exports = client;
